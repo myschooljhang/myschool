@@ -1035,6 +1035,134 @@ footer {
 .footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
 .footer-copy strong { color: var(--gold); font-weight: 600; }
 
+
+/* ══ FOUNDER CREDENTIALS ══ */
+.creds-section { background: var(--cream); }
+
+/* founder strip */
+.creds-founder-strip {
+  display: flex; align-items: center; gap: 20px;
+  background: var(--teal); border-radius: var(--radius-xl);
+  padding: 24px 32px; margin-top: 48px; margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.creds-founder-left {
+  display: flex; align-items: center; gap: 14px; flex: 1; min-width: 220px;
+}
+.creds-founder-avatar {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+.creds-founder-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 700; color: white; line-height: 1.2;
+}
+html[lang="ur"] .creds-founder-name { font-family: 'Gulzar', serif; font-size: 20px; }
+.creds-founder-role {
+  font-size: 12px; color: rgba(255,255,255,0.6); margin-top: 3px;
+}
+html[lang="ur"] .creds-founder-role { font-family: 'AlviNastaleeq','JameelNastaleeq',serif; font-size: 14px; }
+
+.creds-founder-mid {
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+.creds-meta-pill {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 100px; padding: 7px 16px;
+}
+.creds-meta-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 700; color: var(--gold-bright); line-height: 1;
+}
+.creds-meta-lbl {
+  font-size: 11px; color: rgba(255,255,255,0.65);
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+html[lang="ur"] .creds-meta-lbl { font-family: 'AlviNastaleeq','JameelNastaleeq',serif; font-size: 13px; text-transform: none; letter-spacing: 0; }
+
+.creds-profile-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--gold-bright); color: var(--charcoal);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px; font-weight: 700;
+  padding: 11px 22px; border-radius: var(--radius-sm);
+  text-decoration: none; transition: all 0.2s; flex-shrink: 0;
+  white-space: nowrap;
+}
+html[lang="ur"] .creds-profile-btn { font-family: 'AlviNastaleeq','JameelNastaleeq',serif; font-size: 15px; }
+.creds-profile-btn:hover { background: #f7d060; transform: translateY(-2px); }
+
+/* hint line */
+.creds-hint {
+  font-size: 12px; color: var(--text-muted);
+  margin: 12px 0 20px;
+  text-align: center; letter-spacing: 0.01em;
+}
+html[lang="ur"] .creds-hint { font-family: 'AlviNastaleeq','JameelNastaleeq',serif; font-size: 14px; }
+
+/* badges row — let Credly iframes flow naturally */
+.creds-badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 32px 24px;
+  min-height: 300px;
+}
+/* Each Credly iframe wrapper div gets a subtle card treatment */
+.creds-badges-row > div {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+  flex-shrink: 0;
+}
+.creds-badges-row > div:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Credly attribution strip */
+.creds-credly-strip {
+  display: flex; align-items: center; gap: 14px;
+  padding: 12px 20px; margin-top: 12px;
+  background: #eef2ff;
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+}
+.creds-credly-logo {
+  font-weight: 800; font-size: 16px;
+  color: #1a56db; letter-spacing: -0.03em;
+  font-family: 'DM Sans', sans-serif;
+  flex-shrink: 0;
+}
+.creds-credly-sub {
+  font-size: 12px; color: var(--text-muted); flex: 1;
+}
+html[lang="ur"] .creds-credly-sub { font-family: 'AlviNastaleeq','JameelNastaleeq',serif; font-size: 14px; }
+.creds-credly-link {
+  font-size: 12px; font-weight: 700; color: #1a56db;
+  text-decoration: none; transition: opacity 0.2s; flex-shrink: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+html[lang="ur"] .creds-credly-link { font-family: 'AlviNastaleeq','JameelNastaleeq',serif; font-size: 14px; }
+.creds-credly-link:hover { opacity: 0.75; }
+
+@media (max-width: 768px) {
+  .creds-founder-strip { flex-direction: column; align-items: flex-start; padding: 22px 20px; }
+  .creds-founder-mid { width: 100%; }
+  .creds-profile-btn { width: 100%; justify-content: center; }
+  .creds-badges-row { padding: 20px 12px; gap: 12px; }
+}
+
 /* ══════════════════════════════════════
    SCROLL REVEAL
 ══════════════════════════════════════ */
@@ -1104,6 +1232,7 @@ footer {
     <li><a href="#news"><span class="inline-en">News</span><span class="inline-ur">خبریں</span></a></li>
     <li><a href="#subjects"><span class="inline-en">Subjects</span><span class="inline-ur">مضامین</span></a></li>
     <li><a href="#app"><span class="inline-en">App</span><span class="inline-ur">ایپ</span></a></li>
+    <li><a href="#credentials"><span class="inline-en">Credentials</span><span class="inline-ur">اسناد</span></a></li>
     <li><a href="#contact"><span class="inline-en">Contact</span><span class="inline-ur">رابطہ</span></a></li>
   </ul>
 
@@ -1131,6 +1260,7 @@ footer {
   <a href="#news" onclick="toggleMenu()"><span class="inline-en">News & Announcements</span><span class="inline-ur">خبریں و اعلانات</span></a>
   <a href="#subjects" onclick="toggleMenu()"><span class="inline-en">Subjects</span><span class="inline-ur">مضامین</span></a>
   <a href="#app" onclick="toggleMenu()"><span class="inline-en">Learning App</span><span class="inline-ur">تعلیمی ایپ</span></a>
+  <a href="#credentials" onclick="toggleMenu()"><span class="inline-en">Credentials</span><span class="inline-ur">اسناد</span></a>
   <a href="#contact" onclick="toggleMenu()"><span class="inline-en">Contact Us</span><span class="inline-ur">ہم سے رابطہ کریں</span></a>
   <div class="mobile-menu-actions">
     <a href="https://massabfarooq.pythonanywhere.com/login/" class="btn-outline" target="_blank">
@@ -1482,6 +1612,101 @@ footer {
     </div>
   </div>
 </section>
+
+
+<!-- ══ FOUNDER CREDENTIALS ══ -->
+<section class="section creds-section" id="credentials">
+  <div class="section-label">
+    <span class="inline-en">Verified Credentials</span>
+    <span class="inline-ur">تصدیق شدہ اسناد</span>
+  </div>
+  <h2 class="section-title">
+    <span class="inline-en">Qualified to <em>teach &amp; lead</em></span>
+    <span class="inline-ur">پڑھانے اور رہنمائی کی <em>اہلیت</em></span>
+  </h2>
+  <p class="section-desc">
+    <span class="text-en">Our founder Massab Farooq holds 7 verified digital badges from globally recognised institutions — each independently verifiable on Credly.</span>
+    <span class="text-ur">ہمارے بانی مصعب فاروق کے پاس عالمی اداروں کے 7 تصدیق شدہ ڈیجیٹل بیجز ہیں — ہر ایک Credly پر آزادانہ تصدیق کے قابل۔</span>
+  </p>
+
+  <!-- Founder strip -->
+  <div class="creds-founder-strip reveal">
+    <div class="creds-founder-left">
+      <div class="creds-founder-avatar">👨‍💻</div>
+      <div>
+        <div class="creds-founder-name">Massab Farooq</div>
+        <div class="creds-founder-role">
+          <span class="inline-en">Founder &amp; Lead Educator · MySchool Jhang</span>
+          <span class="inline-ur">بانی و سربراہ معلم · مائی اسکول جھنگ</span>
+        </div>
+      </div>
+    </div>
+    <div class="creds-founder-mid">
+      <div class="creds-meta-pill">
+        <span class="creds-meta-num">7</span>
+        <span class="creds-meta-lbl">
+          <span class="inline-en">Verified Badges</span>
+          <span class="inline-ur">تصدیق شدہ بیجز</span>
+        </span>
+      </div>
+      <div class="creds-meta-pill">
+        <span class="creds-meta-num">🌐</span>
+        <span class="creds-meta-lbl">
+          <span class="inline-en">Global Issuers</span>
+          <span class="inline-ur">عالمی ادارے</span>
+        </span>
+      </div>
+      <div class="creds-meta-pill">
+        <span class="creds-meta-num">🔒</span>
+        <span class="creds-meta-lbl">
+          <span class="inline-en">Tamper-proof</span>
+          <span class="inline-ur">محفوظ</span>
+        </span>
+      </div>
+    </div>
+    <a href="https://www.credly.com/users/massab-farooq"
+       target="_blank" rel="noopener" class="creds-profile-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg>
+      <span class="inline-en">Full Profile on Credly</span>
+      <span class="inline-ur">Credly پر مکمل پروفائل</span>
+    </a>
+  </div>
+
+  <!-- Badge hint -->
+  <p class="creds-hint">
+    <span class="inline-en">👆 Click any badge to verify its authenticity directly on Credly</span>
+    <span class="inline-ur">👆 کسی بھی بیج پر کلک کریں اور Credly پر صداقت تصدیق کریں</span>
+  </p>
+
+  <!-- Official Credly badge embeds -->
+  <div class="creds-badges-row">
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="092f4a90-3279-4cd9-bd45-e6da6ba9ae9f" data-share-badge-host="https://www.credly.com"></div>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="47f971d8-cd2a-41e4-9584-bff10e38a79a" data-share-badge-host="https://www.credly.com"></div>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="c436d36b-c16e-49b4-9f43-62bc60a9128a" data-share-badge-host="https://www.credly.com"></div>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0108bc80-67ff-4bdd-be4a-631aee3ad647" data-share-badge-host="https://www.credly.com"></div>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8b6a5041-1d3d-4440-b98d-f3d42392c9fb" data-share-badge-host="https://www.credly.com"></div>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7bb716ed-d5e0-4077-aab3-9108094b6e08" data-share-badge-host="https://www.credly.com"></div>
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="29677bba-6579-4432-b01c-4a0f74e4eeae" data-share-badge-host="https://www.credly.com"></div>
+  </div>
+
+  <!-- Single script — Credly only needs one instance -->
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+  <!-- Credly attribution strip -->
+  <div class="creds-credly-strip">
+    <span class="creds-credly-logo">credly</span>
+    <span class="creds-credly-sub">
+      <span class="inline-en">Open Badge platform by Pearson · Cryptographically verified credentials</span>
+      <span class="inline-ur">Pearson کا اوپن بیج پلیٹ فارم · کرپٹوگرافک طور پر تصدیق شدہ</span>
+    </span>
+    <a href="https://www.credly.com/users/massab-farooq" target="_blank" rel="noopener" class="creds-credly-link">
+      <span class="inline-en">Verify all →</span>
+      <span class="inline-ur">سب تصدیق کریں ←</span>
+    </a>
+  </div>
+
+</section>
+
 
 <!-- ══ SUBJECTS ══ -->
 <section class="section subjects-section" id="subjects">
@@ -1881,6 +2106,7 @@ footer {
     <div>
       <div class="footer-col-h"><span class="inline-en">Connect</span><span class="inline-ur">رابطہ</span></div>
       <ul class="footer-links">
+        <li><a href="#credentials"><span class="inline-en">Credentials</span><span class="inline-ur">اسناد</span></a></li>
         <li><a href="#contact"><span class="inline-en">Contact Us</span><span class="inline-ur">ہم سے رابطہ</span></a></li>
         <li><a href="https://www.facebook.com/MySchoolJhang/" target="_blank">Facebook</a></li>
         <li><a href="https://www.tiktok.com/@myschooljhang1" target="_blank">TikTok</a></li>
@@ -1928,6 +2154,36 @@ window.addEventListener('scroll', () => {
   const nav = document.getElementById('main-nav');
   nav.classList.toggle('scrolled', window.scrollY > 20);
 });
+
+
+/* ── Credly embed handler ── */
+function handleCredlyLoad() {
+  const iframe = document.getElementById('credly-iframe');
+  try {
+    // If iframe loaded but has no content height, show fallback
+    if (iframe && iframe.contentDocument) {
+      const body = iframe.contentDocument.body;
+      if (!body || body.innerHTML.trim() === '') showCredlyFallback();
+    }
+  } catch(e) {
+    // Cross-origin — iframe loaded from credly.com, this is expected & fine
+    // Keep the iframe visible
+  }
+}
+function showCredlyFallback() {
+  document.getElementById('credly-iframe').style.display = 'none';
+  document.getElementById('credly-fallback').style.display = 'block';
+}
+// Fallback timeout — if iframe takes too long
+setTimeout(() => {
+  const iframe = document.getElementById('credly-iframe');
+  if (iframe && iframe.style.display !== 'none') {
+    // Check if iframe has any height content
+    try {
+      if (iframe.offsetHeight < 50) showCredlyFallback();
+    } catch(e) {}
+  }
+}, 5000);
 
 /* ── Scroll Reveal ── */
 const observer = new IntersectionObserver((entries) => {
