@@ -1711,59 +1711,383 @@ html[lang="ur"] .creds-credly-link { font-family: 'AlviNastaleeq','JameelNastale
 <!-- ══ SUBJECTS ══ -->
 <section class="section subjects-section" id="subjects">
   <div class="section-label">
-    <span class="inline-en">Curriculum</span>
-    <span class="inline-ur">نصاب</span>
+    <span class="inline-en">Our Curriculum</span>
+    <span class="inline-ur">ہمارا نصاب</span>
   </div>
   <h2 class="section-title">
-    <span class="inline-en">AI-powered <em>subjects &amp; classes</em></span>
-    <span class="inline-ur">اے آئی <em>مضامین و کلاسز</em></span>
+    <span class="inline-en">Two tracks. One <em>world-class school.</em></span>
+    <span class="inline-ur">دو راستے۔ ایک <em>عالمی معیار کا اسکول۔</em></span>
   </h2>
   <p class="section-desc">
-    <span class="text-en">Pakistan's national curriculum — Playgroup, Nursery, Prep, Class 1–8 — delivered through AI-enhanced video lessons.</span>
-    <span class="text-ur">پاکستان کا قومی نصاب — پلے گروپ، نرسری، پریپ، کلاس 1 تا 8 — اے آئی ویڈیو سبق کے ذریعے۔</span>
+    <span class="text-en">Oxford &amp; Cambridge traditional subjects — enriched with AI courses adopted by MIT, Stanford, and top AI schools worldwide. Both taught together.</span>
+    <span class="text-ur">آکسفورڈ اور کیمبرج کا روایتی نصاب — MIT، Stanford اور دنیا کے بہترین اے آئی اسکولوں کے کورسز کے ساتھ۔ دونوں ایک ساتھ۔</span>
   </p>
-  <div class="subjects-grid">
-    <a href="https://massabfarooq.pythonanywhere.com/" class="subj-card reveal" target="_blank">
-      <span class="subj-icon">🔢</span>
-      <div class="subj-name"><span class="inline-en">Mathematics</span><span class="inline-ur">ریاضی</span></div>
-      <div class="subj-lbl"><span class="inline-en">Numbers, Geometry, Algebra</span><span class="inline-ur">اعداد، ہندسہ، الجبرا</span></div>
-    </a>
-    <a href="https://massabfarooq.pythonanywhere.com/" class="subj-card reveal" target="_blank">
-      <span class="subj-icon">🔬</span>
-      <div class="subj-name"><span class="inline-en">Science</span><span class="inline-ur">سائنس</span></div>
-      <div class="subj-lbl"><span class="inline-en">Physics, Biology, Chemistry</span><span class="inline-ur">طبیعات، حیاتیات، کیمیا</span></div>
-    </a>
-    <a href="https://massabfarooq.pythonanywhere.com/" class="subj-card reveal" target="_blank">
-      <span class="subj-icon">🅰️</span>
-      <div class="subj-name"><span class="inline-en">English</span><span class="inline-ur">انگریزی</span></div>
-      <div class="subj-lbl"><span class="inline-en">Reading, Writing, Grammar</span><span class="inline-ur">پڑھنا، لکھنا، گرامر</span></div>
-    </a>
-    <a href="https://massabfarooq.pythonanywhere.com/" class="subj-card reveal" target="_blank">
-      <span class="subj-icon" style="font-family:'AlviNastaleeq','JameelNastaleeq',serif;font-size:28px;font-weight:700;color:var(--teal);display:block;margin-bottom:14px;line-height:1.2;">اردو</span>
-      <div class="subj-name"><span class="inline-en">Urdu</span><span class="inline-ur">اردو</span></div>
-      <div class="subj-lbl"><span class="inline-en">Qaida, Grammar, Composition</span><span class="inline-ur">قاعدہ، گرامر، انشاء</span></div>
-    </a>
-    <a href="https://massabfarooq.pythonanywhere.com/" class="subj-card reveal" target="_blank">
-      <span class="subj-icon">☪️</span>
-      <div class="subj-name"><span class="inline-en">Islamiat</span><span class="inline-ur">اسلامیات</span></div>
-      <div class="subj-lbl"><span class="inline-en">Quran, Hadith, Seerah</span><span class="inline-ur">قرآن، حدیث، سیرت</span></div>
-    </a>
-    <a href="https://massabfarooq.pythonanywhere.com/" class="subj-card reveal" target="_blank">
-      <span class="subj-icon">🗺️</span>
-      <div class="subj-name"><span class="inline-en">Social Studies</span><span class="inline-ur">معاشرتی علوم</span></div>
-      <div class="subj-lbl"><span class="inline-en">History, Geography, Civics</span><span class="inline-ur">تاریخ، جغرافیہ، شہریت</span></div>
-    </a>
-    <a href="https://massabfarooq.pythonanywhere.com/" class="subj-card reveal" target="_blank">
-      <span class="subj-icon">💻</span>
-      <div class="subj-name"><span class="inline-en">Computer</span><span class="inline-ur">کمپیوٹر</span></div>
-      <div class="subj-lbl"><span class="inline-en">Digital Literacy, Basics</span><span class="inline-ur">ڈیجیٹل خواندگی، بنیادی</span></div>
-    </a>
-    <a href="https://massabfarooq.pythonanywhere.com/" class="subj-card reveal" target="_blank">
-      <span class="subj-icon">🎨</span>
-      <div class="subj-name"><span class="inline-en">Art</span><span class="inline-ur">آرٹ</span></div>
-      <div class="subj-lbl"><span class="inline-en">Drawing, Craft, Design</span><span class="inline-ur">ڈرائنگ، دستکاری، ڈیزائن</span></div>
-    </a>
+
+  <!-- Tab switcher -->
+  <div class="track-tabs" role="tablist">
+    <button class="track-tab active" onclick="switchTrack('traditional', this)" role="tab">
+      <span>🎓</span>
+      <span class="inline-en">Traditional Subjects</span>
+      <span class="inline-ur">روایتی مضامین</span>
+      <span class="tab-badge">
+        <span class="inline-en">Oxford / Cambridge</span>
+        <span class="inline-ur">آکسفورڈ / کیمبرج</span>
+      </span>
+    </button>
+    <button class="track-tab" onclick="switchTrack('ai', this)" role="tab">
+      <span>🤖</span>
+      <span class="inline-en">AI Courses</span>
+      <span class="inline-ur">اے آئی کورسز</span>
+      <span class="tab-badge">
+        <span class="inline-en">MIT · Stanford · AI4K12</span>
+        <span class="inline-ur">MIT · Stanford · AI4K12</span>
+      </span>
+    </button>
   </div>
+
+  <!-- ── TRADITIONAL TRACK ── -->
+  <div class="track-panel active" id="panel-traditional">
+    <div class="trad-grid">
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="trad-card reveal" target="_blank">
+        <span class="trad-icon">🔢</span>
+        <div class="trad-name"><span class="inline-en">Mathematics</span><span class="inline-ur">ریاضی</span></div>
+        <div class="trad-desc"><span class="text-en">Numbers, Algebra, Geometry, Statistics — with AI-assisted problem solving</span><span class="text-ur">اعداد، الجبرا، ہندسہ — اے آئی مسئلہ حل کے ساتھ</span></div>
+        <span class="trad-board">Cambridge Primary</span>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="trad-card reveal" target="_blank">
+        <span class="trad-icon">🔬</span>
+        <div class="trad-name"><span class="inline-en">Science</span><span class="inline-ur">سائنس</span></div>
+        <div class="trad-desc"><span class="text-en">Physics, Biology, Chemistry — using AI simulations and virtual labs</span><span class="text-ur">طبیعات، حیاتیات، کیمیا — اے آئی سمیولیشن کے ساتھ</span></div>
+        <span class="trad-board">Cambridge Science</span>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="trad-card reveal" target="_blank">
+        <span class="trad-icon">📖</span>
+        <div class="trad-name"><span class="inline-en">English</span><span class="inline-ur">انگریزی</span></div>
+        <div class="trad-desc"><span class="text-en">Reading, Writing, Grammar — AI writing coach for fluency &amp; accuracy</span><span class="text-ur">پڑھنا، لکھنا، گرامر — اے آئی رائٹنگ کوچ</span></div>
+        <span class="trad-board">Oxford English</span>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="trad-card reveal" target="_blank">
+        <span class="trad-icon" style="font-family:'AlviNastaleeq','JameelNastaleeq',serif;font-size:28px;font-weight:700;color:var(--teal);display:block;margin-bottom:12px;line-height:1.2;">اردو</span>
+        <div class="trad-name"><span class="inline-en">Urdu</span><span class="inline-ur">اردو</span></div>
+        <div class="trad-desc"><span class="text-en">Qaida, Grammar, Poetry, Composition — AI Nastaleeq typing tools</span><span class="text-ur">قاعدہ، گرامر، شاعری — اے آئی نستعلیق ٹائپنگ</span></div>
+        <span class="trad-board">National Curriculum</span>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="trad-card reveal" target="_blank">
+        <span class="trad-icon">☪️</span>
+        <div class="trad-name"><span class="inline-en">Islamiat</span><span class="inline-ur">اسلامیات</span></div>
+        <div class="trad-desc"><span class="text-en">Quran, Hadith, Seerah, Fiqh — digital Quran tools &amp; recitation AI</span><span class="text-ur">قرآن، حدیث، سیرت، فقہ — ڈیجیٹل قرآن ٹولز</span></div>
+        <span class="trad-board">Pakistan Curriculum</span>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="trad-card reveal" target="_blank">
+        <span class="trad-icon">🗺️</span>
+        <div class="trad-name"><span class="inline-en">Social Studies</span><span class="inline-ur">معاشرتی علوم</span></div>
+        <div class="trad-desc"><span class="text-en">History, Geography, Civics, Pakistan Studies — AI-generated maps &amp; timelines</span><span class="text-ur">تاریخ، جغرافیہ، شہریت — اے آئی نقشے و ٹائم لائنز</span></div>
+        <span class="trad-board">Oxford Studies</span>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="trad-card reveal" target="_blank">
+        <span class="trad-icon">💻</span>
+        <div class="trad-name"><span class="inline-en">Computer Science</span><span class="inline-ur">کمپیوٹر سائنس</span></div>
+        <div class="trad-desc"><span class="text-en">MS Office, Internet, Typing — foundation for AI &amp; coding in higher classes</span><span class="text-ur">ایم ایس آفس، انٹرنیٹ — اے آئی اور کوڈنگ کی بنیاد</span></div>
+        <span class="trad-board">Cambridge ICT</span>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="trad-card reveal" target="_blank">
+        <span class="trad-icon">🎨</span>
+        <div class="trad-name"><span class="inline-en">Art &amp; Design</span><span class="inline-ur">آرٹ و ڈیزائن</span></div>
+        <div class="trad-desc"><span class="text-en">Drawing, Craft, Colour Theory — AI-generated visual inspiration tools</span><span class="text-ur">ڈرائنگ، دستکاری — اے آئی بصری الہام ٹولز</span></div>
+        <span class="trad-board">Cambridge Arts</span>
+      </a>
+
+    </div>
+    <div class="curriculum-note">
+      <span class="text-en"><strong>Oxford &amp; Cambridge aligned:</strong> All traditional subjects follow Oxford University Press and Cambridge Primary frameworks — the same standard used by Pakistan's top private schools — now enhanced with AI tools and video lessons.</span>
+      <span class="text-ur"><strong>آکسفورڈ اور کیمبرج معیار:</strong> تمام روایتی مضامین آکسفورڈ یونیورسٹی پریس اور کیمبرج پرائمری فریم ورک کے مطابق ہیں — پاکستان کے بہترین نجی اسکولوں کا معیار — اب اے آئی ٹولز کے ساتھ۔</span>
+    </div>
+  </div>
+
+  <!-- ── AI COURSES TRACK ── -->
+  <div class="track-panel" id="panel-ai">
+
+    <div class="ai-intro-strip">
+      <div class="ai-intro-text">
+        <div class="ai-intro-label">
+          <span class="inline-en">World-Class AI Curriculum</span>
+          <span class="inline-ur">عالمی اے آئی نصاب</span>
+        </div>
+        <div class="ai-intro-title">
+          <span class="text-en">Courses adopted from MIT, Stanford &amp; AI4K12 — now in Jhang</span>
+          <span class="text-ur">MIT، Stanford اور AI4K12 کے کورسز — اب جھنگ میں</span>
+        </div>
+        <div class="ai-intro-sub">
+          <span class="text-en">Age-appropriate, hands-on AI education from Playgroup to Class 8. The same framework used in California, Florida, and top international AI schools.</span>
+          <span class="text-ur">پلے گروپ سے کلاس 8 تک عمر کے مطابق، عملی اے آئی تعلیم۔ کیلیفورنیا، فلوریڈا اور بین الاقوامی اے آئی اسکولوں کا فریم ورک۔</span>
+        </div>
+      </div>
+      <div class="ai-intro-sources">
+        <span class="ai-source-badge">🎓 MIT Media Lab</span>
+        <span class="ai-source-badge">🔬 AI4K12 / CSTA</span>
+        <span class="ai-source-badge">🌐 OpenAI Academy</span>
+        <span class="ai-source-badge">🏛️ Univ. of Florida</span>
+      </div>
+    </div>
+
+    <div class="ai-courses-grid">
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="ai-course-card reveal" target="_blank">
+        <div class="ai-course-arrow">→</div>
+        <div class="ai-course-top">
+          <div class="ai-course-emoji" style="background:rgba(31,48,59,0.07);">🤖</div>
+          <div class="ai-course-meta">
+            <span class="ai-course-level level-foundation">
+              <span class="inline-en">Foundation</span><span class="inline-ur">بنیادی</span>
+            </span>
+            <div class="ai-course-name">
+              <span class="text-en">AI in My World</span>
+              <span class="text-ur">میری دنیا میں اے آئی</span>
+            </div>
+          </div>
+        </div>
+        <div class="ai-course-desc">
+          <span class="text-en">What is AI? Smart devices, voice assistants, self-driving cars. Students discover AI in everyday life through stories, play, and hands-on exploration. Based on MIT Media Lab's "How to Train Your Robot" curriculum.</span>
+          <span class="text-ur">اے آئی کیا ہے؟ سمارٹ ڈیوائسز، وائس اسسٹنٹ۔ MIT میڈیا لیب کے "How to Train Your Robot" نصاب پر مبنی۔</span>
+        </div>
+        <div class="ai-course-tags">
+          <span class="ai-tag">MIT Media Lab</span>
+          <span class="ai-tag">AI Literacy</span>
+          <span class="ai-tag">No Coding</span>
+        </div>
+        <div class="ai-course-classes">
+          <strong><span class="inline-en">Classes:</span><span class="inline-ur">کلاسز:</span></strong>
+          <span class="inline-en">Playgroup · Nursery · Prep · Class 1–2</span>
+          <span class="inline-ur">پلے گروپ · نرسری · پریپ · کلاس 1–2</span>
+        </div>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="ai-course-card reveal" target="_blank">
+        <div class="ai-course-arrow">→</div>
+        <div class="ai-course-top">
+          <div class="ai-course-emoji" style="background:rgba(219,30,39,0.07);">🐍</div>
+          <div class="ai-course-meta">
+            <span class="ai-course-level level-core">
+              <span class="inline-en">Core · Class 3–5</span><span class="inline-ur">بنیادی · کلاس 3–5</span>
+            </span>
+            <div class="ai-course-name">
+              <span class="text-en">Scratch &amp; Block Coding</span>
+              <span class="text-ur">Scratch اور بلاک کوڈنگ</span>
+            </div>
+          </div>
+        </div>
+        <div class="ai-course-desc">
+          <span class="text-en">Visual programming using MIT Scratch — create games, animations, and interactive stories. Builds computational thinking that is the backbone of all AI. Recommended by CSTA and AI4K12 for primary grades.</span>
+          <span class="text-ur">MIT Scratch سے بصری پروگرامنگ — گیمز اور اینیمیشن بنائیں۔ CSTA اور AI4K12 کی سفارش۔</span>
+        </div>
+        <div class="ai-course-tags">
+          <span class="ai-tag">MIT Scratch</span>
+          <span class="ai-tag">CSTA Aligned</span>
+          <span class="ai-tag">Computational Thinking</span>
+        </div>
+        <div class="ai-course-classes">
+          <strong><span class="inline-en">Classes:</span><span class="inline-ur">کلاسز:</span></strong>
+          <span class="inline-en">Class 3 · Class 4 · Class 5</span>
+          <span class="inline-ur">کلاس 3 · کلاس 4 · کلاس 5</span>
+        </div>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="ai-course-card reveal" target="_blank">
+        <div class="ai-course-arrow">→</div>
+        <div class="ai-course-top">
+          <div class="ai-course-emoji" style="background:rgba(201,126,16,0.09);">🧠</div>
+          <div class="ai-course-meta">
+            <span class="ai-course-level level-core">
+              <span class="inline-en">Core · Class 4–6</span><span class="inline-ur">بنیادی · کلاس 4–6</span>
+            </span>
+            <div class="ai-course-name">
+              <span class="text-en">Machine Learning for Kids</span>
+              <span class="text-ur">بچوں کے لیے مشین لرننگ</span>
+            </div>
+          </div>
+        </div>
+        <div class="ai-course-desc">
+          <span class="text-en">Train AI models using Google's Teachable Machine and IBM's Machine Learning for Kids. Students teach a computer to recognise images, sounds, and text — understanding how AI actually "learns." Used in top US &amp; UK schools.</span>
+          <span class="text-ur">Google Teachable Machine سے اے آئی ماڈل بنائیں۔ امریکہ اور برطانیہ کے بہترین اسکولوں میں استعمال۔</span>
+        </div>
+        <div class="ai-course-tags">
+          <span class="ai-tag">Google Teachable Machine</span>
+          <span class="ai-tag">IBM ML4Kids</span>
+          <span class="ai-tag">Hands-on</span>
+        </div>
+        <div class="ai-course-classes">
+          <strong><span class="inline-en">Classes:</span><span class="inline-ur">کلاسز:</span></strong>
+          <span class="inline-en">Class 4 · Class 5 · Class 6</span>
+          <span class="inline-ur">کلاس 4 · کلاس 5 · کلاس 6</span>
+        </div>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="ai-course-card reveal" target="_blank">
+        <div class="ai-course-arrow">→</div>
+        <div class="ai-course-top">
+          <div class="ai-course-emoji" style="background:rgba(31,48,59,0.07);">✍️</div>
+          <div class="ai-course-meta">
+            <span class="ai-course-level level-core">
+              <span class="inline-en">Core · Class 3–8</span><span class="inline-ur">بنیادی · کلاس 3–8</span>
+            </span>
+            <div class="ai-course-name">
+              <span class="text-en">AI Prompt Engineering</span>
+              <span class="text-ur">اے آئی پرامپٹ انجینئرنگ</span>
+            </div>
+          </div>
+        </div>
+        <div class="ai-course-desc">
+          <span class="text-en">How to talk to AI — writing effective prompts for ChatGPT, research, writing, and creative tasks. OpenAI Academy's K-12 curriculum teaches students the skill most demanded by employers in 2025. Critical thinking at its core.</span>
+          <span class="text-ur">ChatGPT سے بات کرنا — OpenAI Academy کا K-12 نصاب۔ 2025 میں آجروں کی سب سے زیادہ مانگ والی مہارت۔</span>
+        </div>
+        <div class="ai-course-tags">
+          <span class="ai-tag">OpenAI Academy</span>
+          <span class="ai-tag">ChatGPT</span>
+          <span class="ai-tag">Critical Thinking</span>
+        </div>
+        <div class="ai-course-classes">
+          <strong><span class="inline-en">Classes:</span><span class="inline-ur">کلاسز:</span></strong>
+          <span class="inline-en">Class 3 through Class 8</span>
+          <span class="inline-ur">کلاس 3 تا کلاس 8</span>
+        </div>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="ai-course-card reveal" target="_blank">
+        <div class="ai-course-arrow">→</div>
+        <div class="ai-course-top">
+          <div class="ai-course-emoji" style="background:rgba(219,30,39,0.07);">🦾</div>
+          <div class="ai-course-meta">
+            <span class="ai-course-level level-advanced">
+              <span class="inline-en">Advanced · Class 6–8</span><span class="inline-ur">ایڈوانسڈ · کلاس 6–8</span>
+            </span>
+            <div class="ai-course-name">
+              <span class="text-en">Robotics &amp; Automation</span>
+              <span class="text-ur">روبوٹکس اور آٹومیشن</span>
+            </div>
+          </div>
+        </div>
+        <div class="ai-course-desc">
+          <span class="text-en">Introduction to robotics, sensors, and automation logic. Students design robot behaviours and understand how AI drives real-world machines. Aligned with University of Florida's K-12 AI programme and AI4K12 Big Idea 5.</span>
+          <span class="text-ur">روبوٹکس، سینسرز اور آٹومیشن۔ یونیورسٹی آف فلوریڈا کے K-12 اے آئی پروگرام کے مطابق۔</span>
+        </div>
+        <div class="ai-course-tags">
+          <span class="ai-tag">Univ. of Florida K-12</span>
+          <span class="ai-tag">AI4K12 Big Idea 5</span>
+          <span class="ai-tag">Sensors &amp; Logic</span>
+        </div>
+        <div class="ai-course-classes">
+          <strong><span class="inline-en">Classes:</span><span class="inline-ur">کلاسز:</span></strong>
+          <span class="inline-en">Class 6 · Class 7 · Class 8</span>
+          <span class="inline-ur">کلاس 6 · کلاس 7 · کلاس 8</span>
+        </div>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="ai-course-card reveal" target="_blank">
+        <div class="ai-course-arrow">→</div>
+        <div class="ai-course-top">
+          <div class="ai-course-emoji" style="background:rgba(10,92,82,0.08);">🐍</div>
+          <div class="ai-course-meta">
+            <span class="ai-course-level level-advanced">
+              <span class="inline-en">Advanced · Class 7–8</span><span class="inline-ur">ایڈوانسڈ · کلاس 7–8</span>
+            </span>
+            <div class="ai-course-name">
+              <span class="text-en">Python for AI Beginners</span>
+              <span class="text-ur">اے آئی کے لیے Python بنیادی</span>
+            </div>
+          </div>
+        </div>
+        <div class="ai-course-desc">
+          <span class="text-en">The world's #1 AI programming language — taught at beginner level. Variables, loops, functions, and first AI scripts. Python is the entry point to every AI, data science, and tech career globally. Based on CSTA standards.</span>
+          <span class="text-ur">دنیا کی نمبر 1 اے آئی پروگرامنگ زبان — بنیادی سطح پر۔ CSTA معیار کے مطابق۔</span>
+        </div>
+        <div class="ai-course-tags">
+          <span class="ai-tag">CSTA Standards</span>
+          <span class="ai-tag">Python</span>
+          <span class="ai-tag">Future-Ready</span>
+        </div>
+        <div class="ai-course-classes">
+          <strong><span class="inline-en">Classes:</span><span class="inline-ur">کلاسز:</span></strong>
+          <span class="inline-en">Class 7 · Class 8</span>
+          <span class="inline-ur">کلاس 7 · کلاس 8</span>
+        </div>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="ai-course-card reveal" target="_blank">
+        <div class="ai-course-arrow">→</div>
+        <div class="ai-course-top">
+          <div class="ai-course-emoji" style="background:rgba(219,30,39,0.07);">⚖️</div>
+          <div class="ai-course-meta">
+            <span class="ai-course-level level-signature">
+              <span class="inline-en">★ Signature · All Classes</span><span class="inline-ur">★ خاص · تمام کلاسز</span>
+            </span>
+            <div class="ai-course-name">
+              <span class="text-en">AI Ethics &amp; Digital Citizenship</span>
+              <span class="text-ur">اے آئی اخلاقیات اور ڈیجیٹل شہریت</span>
+            </div>
+          </div>
+        </div>
+        <div class="ai-course-desc">
+          <span class="text-en">Privacy, bias, deepfakes, misinformation, and responsible AI use. Islamic values applied to digital life. California Dept. of Education and CSTA both rank this as the highest-priority AI topic for all grade levels in 2025.</span>
+          <span class="text-ur">پرائیویسی، تعصب، ڈیپ فیک، غلط معلومات اور ذمہ دار اے آئی۔ اسلامی اقدار ڈیجیٹل زندگی میں۔ کیلیفورنیا اور CSTA کی سب سے اہم ترجیح 2025۔</span>
+        </div>
+        <div class="ai-course-tags">
+          <span class="ai-tag">California CDE</span>
+          <span class="ai-tag">CSTA #1 Priority</span>
+          <span class="ai-tag">Islamic Values</span>
+        </div>
+        <div class="ai-course-classes">
+          <strong><span class="inline-en">Classes:</span><span class="inline-ur">کلاسز:</span></strong>
+          <span class="inline-en">All classes — Playgroup to Class 8</span>
+          <span class="inline-ur">تمام کلاسز — پلے گروپ تا کلاس 8</span>
+        </div>
+      </a>
+
+      <a href="https://massabfarooq.pythonanywhere.com/" class="ai-course-card reveal" target="_blank">
+        <div class="ai-course-arrow">→</div>
+        <div class="ai-course-top">
+          <div class="ai-course-emoji" style="background:rgba(201,126,16,0.09);">📊</div>
+          <div class="ai-course-meta">
+            <span class="ai-course-level level-advanced">
+              <span class="inline-en">Advanced · Class 6–8</span><span class="inline-ur">ایڈوانسڈ · کلاس 6–8</span>
+            </span>
+            <div class="ai-course-name">
+              <span class="text-en">Data Literacy &amp; Thinking</span>
+              <span class="text-ur">ڈیٹا خواندگی اور سوچ</span>
+            </div>
+          </div>
+        </div>
+        <div class="ai-course-desc">
+          <span class="text-en">Reading charts, spotting patterns, understanding statistics and how AI uses data to make decisions. World Economic Forum lists data literacy as a top skill through 2030. Taught through real Pakistan data — population, weather, economy.</span>
+          <span class="text-ur">چارٹ پڑھنا، پیٹرن دیکھنا، اعداد و شمار۔ WEF کی 2030 تک اہم مہارت۔ پاکستان کے حقیقی ڈیٹا سے تعلیم۔</span>
+        </div>
+        <div class="ai-course-tags">
+          <span class="ai-tag">WEF Future Skills</span>
+          <span class="ai-tag">Real Pakistan Data</span>
+          <span class="ai-tag">Statistics</span>
+        </div>
+        <div class="ai-course-classes">
+          <strong><span class="inline-en">Classes:</span><span class="inline-ur">کلاسز:</span></strong>
+          <span class="inline-en">Class 6 · Class 7 · Class 8</span>
+          <span class="inline-ur">کلاس 6 · کلاس 7 · کلاس 8</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="curriculum-note">
+      <span class="text-en"><strong>Sources:</strong> MIT Media Lab Impact.AI, AI4K12 / CSTA National Guidelines, OpenAI Academy K-12, University of Florida K-12 AI Programme, California Dept. of Education AI Framework 2025, World Economic Forum Future of Jobs Report 2025.</span>
+      <span class="text-ur"><strong>ماخذ:</strong> MIT Media Lab، AI4K12 / CSTA قومی رہنما خطوط، OpenAI Academy K-12، یونیورسٹی آف فلوریڈا K-12 اے آئی پروگرام، کیلیفورنیا اے آئی فریم ورک 2025، WEF مستقبل کی ملازمتیں رپورٹ 2025۔</span>
+    </div>
+  </div>
+
 </section>
 
 <!-- ══ GRADES ══ -->
@@ -2155,6 +2479,19 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 20);
 });
 
+
+
+/* ── Curriculum Track Tabs ── */
+function switchTrack(track, btn) {
+  document.querySelectorAll('.track-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.track-tab').forEach(b => b.classList.remove('active'));
+  document.getElementById('panel-' + track).classList.add('active');
+  btn.classList.add('active');
+  // re-trigger reveal animations for newly shown cards
+  document.querySelectorAll('#panel-' + track + ' .reveal:not(.visible)').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), i * 60);
+  });
+}
 
 /* ── Credly embed handler ── */
 function handleCredlyLoad() {
